@@ -33,10 +33,10 @@ class _TP2State extends State<TP2> {
               controller: pw,
               obscureText: true,
               decoration: const InputDecoration(
-                  hintText: "password",
-                  prefixIcon: Icon(Icons.key),
-                  labelText: "password",
-                  ),
+                hintText: "password",
+                prefixIcon: Icon(Icons.key),
+                labelText: "password",
+              ),
             ),
           ),
           Container(
@@ -53,8 +53,8 @@ class _TP2State extends State<TP2> {
                   },
                   icon: const Icon(Icons.check),
                   label: const Padding(
-                    padding:  EdgeInsets.all(8.0),
-                    child:  Text('Valider'),
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Valider'),
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
@@ -63,9 +63,9 @@ class _TP2State extends State<TP2> {
                 ElevatedButton.icon(
                   onPressed: () {},
                   icon: const Icon(Icons.cancel_outlined),
-                  label:const Padding(
-                    padding:  EdgeInsets.all(8.0),
-                    child:  Text('Annuler'),
+                  label: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Annuler'),
                   ),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
                 ),
