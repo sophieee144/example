@@ -54,8 +54,10 @@ class _TP3State extends State<TP3> {
             const SizedBox(
               height: 30,
             ),
-            Container(margin: EdgeInsets.only(right: 30 ),
-              child: Row(mainAxisAlignment: MainAxisAlignment.end,
+            Container(
+              margin: const EdgeInsets.only(right: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   SmoothStarRating(
                       onRatingChanged: (v) {
@@ -63,7 +65,6 @@ class _TP3State extends State<TP3> {
                         setState(() {});
                       },
                       starCount: 5,
-                      
                       rating: rating,
                       size: 40.0,
                       filledIconData: Icons.star,
